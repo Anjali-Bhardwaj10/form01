@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Form</title>
+    
+    
+    <style>
+        body {
+            background-color:#DCDOFF; 
+            font-family: Arial, sans-serif; 
+            padding: 0;
+            margin: 0;
+        }
+
+        h1 {
+            color: #A94064; 
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color:lavender; 
+            width: 450px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+        }
+
+        h2 {
+            color: #333333; 
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+         input[type="mob"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 12px 25px;
+            background-color: #A94064;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: pink;
+        }
+
+        label {
+            color: #A94064;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Information Form</h1>
+
+<form>
+
+  
+  <h2>Name:</h2>
+  <input type="text" name="name"><br>
+
+
+  <h2>Mobile:</h2>
+  <input type="mob" name="mobile"><br>
+
+
+  <h2>Email:</h2>
+  <input type="email" name="email"><br>
+
+  
+  <h2>Gender:</h2>
+  <input type="radio" name="gender" value="Male"> Male
+  <input type="radio" name="gender" value="Female"> Female<br><br>
+
+  
+  <h2>Highest Qualification:</h2>
+  <input type="checkbox" name="highest qualification" value="10th pass"> 10th pass
+  <input type="checkbox" name="highest qualification" value="12th pass"> 12th pass
+  <input type="checkbox" name="highest qualification" value="undergraduate"> Undergraduate
+  <input type="checkbox" name="highest qualification" value="other"> Other<br><br>
+
+  
+  <h2>Do you like tea?</h2>
+  <select name="tea">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+  </select><br><br>
+
+  
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
